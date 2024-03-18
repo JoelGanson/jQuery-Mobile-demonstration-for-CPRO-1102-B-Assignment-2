@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>jQuery UI Interactions, Effects, and Widgets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Import JQuery Library; version 1.11.1 instead of 3.7.1 because jQuery Mobile does not function with new versions -->
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <!-- Import jQuery Mobile default theme -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <!-- Import jQuery Mobile default code -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- Import local jQuery Mobile theme -->
+    <link rel="stylesheet" href="themes/Meown.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  </head>
+  <body>
+    <!-- Blog Page -->
+    <div data-role="page" id="blog">
+      <header data-role="header">
+        <h1>Meown</h1>
+        <div data-role="navBar">
+          <ul>
+            <a
+              data-role="button"
+              class="ui-btn-active"
+              data-icon="home"
+              href="#blog"
+              >Blog</a
+            >
+            <a data-role="button" data-icon="mail" href="#contactUs"
+              >Contact Us</a
+            >
+          </ul>
+          <!-- /navBar -->
+        </div>
+      </header>
+
+      <section
+        data-role="main"
+        role="main"
+        class="ui-content ui-page-theme-a"
+        data-form="ui-page-theme-a"
+        data-theme="a"
+      >
+        <div class="ui-body ui-body-a ui-corner-all" id="names">
+          <h2>Do cats know their names?</h2>
+          <p>
+            According to PetMD<a href="#citations">¹</a> cats dow know their own
+            names as long as you use positive reinforcement. They can also learn
+            the names of your other pets and can tell when they are being talked
+            to or if someone or something else is being talked to.
+          </p>
+          <p>
+            The best way to teach your cat its name is to associate it with good
+            things. Try saying its name before giving it treats, playing with
+            it, or petting it. Try to avoid saying its name when doing things it
+            may not like, such as putting it in its carrier or giving them a
+            bath.
+          </p>
+        </div>
+        <div class="ui-body ui-body-a ui-corner-all" id="essential">
+          <h2>Essential tips to raise healthy cats</h2>
+          <p>
+            An article by the Valley West & Elk Valley Veterinary Hospital<a
+              href="#citations"
+              >²</a
+            >
+            gives the impression that there are seven vital steps to raising a
+            health and happy cat. Paying attention to their diet, particularly
+            giving them good wet food, is the vital first step. Your cat always
+            needs water available as well, but they get most of their water from
+            their food. It's important to introduce wet food early, because they
+            can get too used to dry food and turn their nose up at the healthier
+            food.
+          </p>
+          <p>
+            A second vital step is to make sure your cat has a safe place to go
+            if they ever feel threatend or stressed, and that their litter box
+            is in such a place. This includes giving each cat you care for its
+            own seperate litter box, and avoiding lidded litter boxes.
+          </p>
+          <p>
+            The third thing VWEVVH lists is not having too many cats. Cats are
+            territorial, and while they can be social, they typically want lots
+            of space for themselves. The article says that two is a good
+            maximum, but I disagree and say three is a good number.
+          </p>
+          <p>
+            It is recomended to enrich your cats' environment fourth, in order
+            to cut down on vet visits. At the same time, they list seeing the
+            vet regularly as their fifth item. This means providing lots of toys
+            and climbing spaces, and scratching posts; that way, your cat gets
+            the exercise they need without being destructive. And when you do go
+            to the vet, it should be to get the vaccinations they need, and
+            hopefully not for injuries they have sustained by being let outdoors
+            because the indoors isn't enriching enough.
+          </p>
+          <p>
+            Article item six is brushing. While your cat may lick themselves
+            clean, this can cause them to swallow their loose fur and cause
+            gross hairballs. These are not only a pain to clean up after your
+            cat has hacked them up, but they can hurt the cat while it's trying
+            to dislodge it! Brushing the cat regularly to remove excess fur can
+            prevent this, and if the cat isn't cooperative you can assosiate
+            brushing with positive things like giving them treats.
+          </p>
+          <p>
+            Last on their list is to spay or neuter your cat. They say that a
+            cat in heat is very uncomfortable, so spaying or neutering the cat
+            can help prevent that discomfort. It also keeps cats from becoming
+            overpopulated, because too many cats have to be put down since
+            there's not enough people to care for them.
+          </p>
+        </div>
+        <div class="ui-body ui-body-a ui-corner-all" id="attack">
+          <h2>Why does my cat attack me?</h2>
+          <p>
+            I'm going to answer this one from personal experience. The
+            personality of a cat is as varied as the personality of a person.
+            Some people are just spiteful jerks while others enjoy playful
+            banter, and some cats are just hunters by nature. The primary
+            motiviation for a cat to pounce on you is their hunting instinct,
+            which for some cats is more pronounced than others.
+          </p>
+          <p>
+            While hunting and pouncing can be seen as a form of play,
+            occasionally you may suffer cat attacks of other varieties.
+            Aggressive clawings when your cat is in a small space, possibly
+            trying to get away from you, are an indication that you are
+            bothering the cat and not giving them enough space. It can be a sign
+            that there is no safe place for them to go, or that you have been
+            hurting your cat somehow.
+          </p>
+          <p>
+            A cat that bites hard is unhappy in similar but different ways. It
+            does not want to be touched, moved, or sought after. It probably
+            feels smothered. Try giving a biting cat more independance, and more
+            hiding spaces. In a cluttered house, this can also be a sign that
+            the cat is stressed. However, playful bites, whether they break skin
+            or not, are not meant to hurt you, and they indicate that your cat
+            is simply bored. Try getting some more toys, and interacting with
+            your cat more. I suggest letting them sniff whatever you are
+            handling, such as food or phones, when they come to investigate.
+          </p>
+        </div>
+        <div class="ui-body ui-body-a ui-corner-all" id="party">
+          <h2>How to throw a birthday party for your cat</h2>
+          <p>
+            Cats don't really understand the concept of a birthday. They may be
+            vaguely aware of seasons passing, but they don't mark the days on a
+            calendar the same way humans do. But if you want to throw a party
+            for your cat, the best way is to not disturb the cat's routine.
+          </p>
+          <p>
+            Start by inviting only people who the cat is familiar with. You can
+            invite other pets as well, if you know the cat deals well with those
+            pets and socialization. But do not invite too many people and pets.
+            Your cat is still territorial, and too many beings infringing on
+            your cat's home can really stress them out. A small party is a good
+            party.
+          </p>
+          <p>
+            Do not over decorate. Your cat won't understand that the party is
+            for them, and too many decorations can make their environment
+            cluttered and unfamiliar, which also stresses them out.
+          </p>
+          <p>
+            Get them a healthy but tasty treat. Don't feed your cat regular cake
+            that a human would eat. You can have a regular cake to share with
+            your human guests, but cats are carnivourous. A large dish of salmon
+            or other meats is a good treat for a cat to eat on their birthday.
+          </p>
+        </div>
+
+        <div class="ui-body ui-body-a ui-corner-all" id="citations">
+          <h4>Citations</h4>
+          <p>
+            ¹<a
+              href="https://www.petmd.com/cat/behavior/do-cats-know-their-names"
+              >https://www.petmd.com/cat/behavior/do-cats-know-their-names</a
+            >
+          </p>
+          <p>
+            ²<a
+              href="https://www.valleywestvets.com/services/cats/blog/7-tips-raising-healthy-cat-honor-national-adopt-cat-month"
+            >
+              https://www.valleywestvets.com/services/cats/blog/7-tips-raising-healthy-cat-honor-national-adopt-cat-month</a
+            >
+          </p>
+        </div>
+      </section>
+      <!-- Footer section -->
+      <footer data-role="footer"><h4>&copy; 2024</h4></footer>
+    </div>
+    <!-- Contact Us Page -->
+    <div data-role="page" id="contactUs">
+      <header data-role="header">
+        <h1 class="ui-title">Meown</h1>
+        <div data-role="navBar">
+          <ul>
+            <a data-role="button" data-icon="home" href="#blog">Blog</a>
+            <a
+              data-role="button"
+              class="ui-btn-active"
+              data-icon="mail"
+              href="#contactUs"
+              >Contact Us</a
+            >
+          </ul>
+          <!-- /navBar -->
+        </div>
+      </header>
+
+      <section
+        data-role="main"
+        role="main"
+        class="ui-content ui-page-theme-a"
+        data-form="ui-page-theme-a"
+        data-theme="a"
+      >
+        <div>
+          <div class="ui-body ui-body-a ui-corner-all" id="email">
+            <h2>Email:</h2>
+            <p>
+              We can be reached at
+              <a href="mailto:contactus@Meown.ca">contactus@Meown.ca</a>
+            </p>
+          </div>
+          <div class="ui-body ui-body-a ui-corner-all" id="mail">
+            <h2>Mailing Address:</h2>
+            <p></p>
+          </div>
+          <div class="ui-body ui-body-a ui-corner-all" id="Phone">
+            <h2>Phone:</h2>
+            <p></p>
+          </div>
+          <a
+            href="#"
+            data-role="button"
+            data-rel="back"
+            data-icon="back"
+            data-theme="a"
+            >Back to previous page</a
+          >
+        </div>
+      </section>
+      <!-- Footer section -->
+      <footer data-role="footer"><h4>&copy; 2024</h4></footer>
+    </div>
+  </body>
+</html>
